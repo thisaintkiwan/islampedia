@@ -1,0 +1,61 @@
+{% extends 'back/base.html' %}
+
+{% block content %}
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="toolbar">
+                            <a class ="btn btn-sm btn-danger" href="{% url 'tambah_blog' %}"> Tambah Blog</a>&ensp;&ensp; &ensp;
+                            <a class ="btn btn-sm btn-danger" href="{% url 'sinkron_sholat' %}"> Sinkron Sholat</a>&ensp;&ensp; &ensp;
+                            <!--Here you can write extra buttons/actions for the toolbar-->
+                        </div>
+                        <table id="bootstrap-table" class="table">
+                            <thead>
+                                <th data-field="state" data-checkbox="true"></th>
+                                <th data-field="id" class="text-center">Tanggal</th>
+                                <th data-field="imsyak" data-sortable="true">Imsyak</th>
+                                <th data-field="shubuh" data-sortable="true">Shubuh</th>
+                                <th data-field="Body" data-sortable="true">Terbit</th>
+                                <th data-field="dhuha" data-sortable="true">Dhuha</th>
+                                <th data-field="dhuhur">Dzuhur</th>
+                                <th data-field="ashr" data-sortable="true">Ashr</th>
+                                <th data-field="magrib" data-sortable="true">Magrib</th>
+                                <th data-field="isya" data-sortable="true">Isya</th>
+
+
+                                <th>Actions</th>
+                            </thead>
+                            <tbody>
+                                {% for a in sholat %}
+                                <tr>
+                                    <td></td>
+                                    <td>{{a.tanggal}}</td>
+                                    <td>{{a.imsyak}}</td>
+                                    <td>{{a.shubuh}}</td>
+                                    <td>{{a.terbit}}</td>
+                                    <td>{{a.dhuha}}</td>
+                                    <td>{{a.dhuhur}}</td>
+                                    <td>{{a.ashr}}</td>
+                                    <td>{{a.magrib}}</td>
+                                    <td>{{a.isya}}</td>
+                                    <td>
+                                        <a class="btn btn-info text-white bi bi-search" href="">Lihat </a>
+                                        <a class="btn btn-warning text-white bi bi-pencil" href="">Edit </a>
+                                        <a oneclick="return confirm('delete blog?');"class="btn btn-danger text-white bi bi-trash" href="">Delete </a>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                            
+                        </table>
+                    </div>
+                </div><!--  end card  -->
+            </div> <!-- end col-md-12 -->
+        </div> <!-- end row -->
+    </div>
+</div>
+{% endblock content %}

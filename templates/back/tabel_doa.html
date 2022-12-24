@@ -1,0 +1,51 @@
+{% extends 'back/base.html' %}
+
+{% block content %}
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="toolbar">
+                            <a class ="btn btn-sm btn-danger" href="{% url 'tambah_blog' %}"> Tambah Blog</a>&ensp;&ensp; &ensp;
+                            <a class ="btn btn-sm btn-danger" href="{% url 'sinkron_doa' %}"> Sinkron Doa</a>&ensp;&ensp; &ensp;
+                            <!--Here you can write extra buttons/actions for the toolbar-->
+                        </div>
+                        <table id="bootstrap-table" class="table">
+                            <thead>
+                                <th data-field="state" data-checkbox="true"></th>
+                                <th data-field="id" class="text-center">ID</th>
+                                <th data-field="doa" data-sortable="true">Doa</th>
+                                <th data-field="ayat" data-sortable="true">Ayat</th>
+                                <th data-field="latin" data-sortable="true">Latin</th>
+                                <th data-field="kategori" data-sortable="true">Artinya</th>
+                                <th>Actions</th>
+                            </thead>
+                            <tbody>
+                                {% for a in doa %}
+                                <tr>
+                                    <td></td>
+                                    <td>{{a.id}}</td>
+                                    <td>{{a.doa}}</td>
+                                    <td>{{a.ayat}}</td>
+                                    <td>{{a.latin}}</td>
+                                    <td>{{a.artinya}}</td>
+                                    <td>
+                                        <a class="btn btn-info text-white bi bi-search" href="">Lihat </a>
+                                        <a class="btn btn-warning text-white bi bi-pencil" href="">Edit </a>
+                                        <a oneclick="return confirm('delete blog?');"class="btn btn-danger text-white bi bi-trash" href="">Delete </a>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                            
+                        </table>
+                    </div>
+                </div><!--  end card  -->
+            </div> <!-- end col-md-12 -->
+        </div> <!-- end row -->
+    </div>
+</div>
+{% endblock content %}

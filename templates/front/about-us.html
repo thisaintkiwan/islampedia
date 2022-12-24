@@ -1,0 +1,297 @@
+{% extends 'front/base.html' %}
+{% load static %}
+{% block content %}
+
+<center><div class="wrapper"></center>
+    <div class="parallax filter-black center">
+        <div class="parallax-image">
+            <img src="{% static 'front/img/beach.jpg' %}">
+        </div>
+
+        <div class="small-info">
+            <h3>About Me</h3>
+            <h1>Ridwan Jumriadi</h1>
+        </div>
+    </div>
+
+    <div class="section">
+           <div class="container">
+            <center> <h2 class="section-title">Introduction</h2>
+               <div class="row">
+                <center><div class="col-6">
+                       <p>
+                           Hi errbody! lemme intoduce myself. kiwan my name, currently studying informatics engineering at UMKT. thats all from me. </p>
+                        </p> </p>
+
+                   </div>
+                     {% comment %} <div class="col-md-6">
+                       <p>Tim symbolizes the creative spirit inside of each and everyone of us. A designer by trade, he enjoys making the World Wide Web a more beautiful place and helping others do the same.</p>
+                       <p>
+
+He promises to put all his time and effort into providing you with handcrafted content that you will fall in love with and that will have you come back for more every time you start a new project.</p>
+                   </div>
+               </div> {% endcomment %}
+           </div>
+    </div><!-- section -->
+
+    <div class="section">
+        <div class="container">
+            <center><h2 class="section-title">More about author <small> (kiwan)</small></h2>
+            <div class="team-presentation">
+                <div class="row"><br><br><br>
+                    <div class="col-6">
+                      <center>  <div class="card card-user card-plain">
+                            <div class="content">
+                                <div class="author">
+                                    <a href="#">
+                                    <img class="avatar border-gray" src="{% static 'front/img/avatar gue1.jpg' %}" alt="..."/>
+                                    <h4 class="title">Ridwan Jumriadi <br />
+                                        <small>2011102441157</small>
+                                    </h4>
+                                    </a>
+                                </div>
+                                <p class="description text-center">
+                                    <i class="fa fa-map-marker fa-fw text-muted"></i> Samarinda, East Borneo <br/>
+                                    <i class="fa fa-instagram fa-fw text-muted"></i> @ihatekiwan <br/>
+                                    <i class="fa fa-envelope-o fa-fw text-muted"></i> ridwansweepea@gmail.com
+                                </p>
+                            </div>
+                            <hr>
+                            {% comment %} <div class="text-center">
+                                <button href="#" class="btn btn-social btn-instagram btn-simple"><i class="fa fa-instagram"></i></button> {% endcomment %}
+                                {% comment %} <button href="#" class="btn btn-social btn-twitter btn-simple"><i class="fa fa-twitter"></i></button>
+                                <button href="#" class="btn btn-social btn-google btn-simple"><i class="fa fa-google-plus-square"></i></button> {% endcomment %}
+
+                            {% comment %} </div>
+                        </div> <!-- end card-->
+                    </div> {% endcomment %}
+                    {% comment %} <div class="col-md-4">
+                        <div class="card card-user card-plain">
+                            <div class="content">
+                                <div class="author">
+                                    <a href="#">
+                                        <img class="avatar border-gray" src="{% static 'front/img/default-avatar.png' %}" alt="..."/>
+                                        <h4 class="title">Drake <br />
+                                            <small>Artist</small>
+                                        </h4>
+                                    </a>
+                                </div>
+                                <p class="description text-center">
+                                    <i class="fa fa-map-marker fa-fw text-muted"></i> Toronto, Ontario <br/>
+                                    <i class="fa fa-building-o fa-fw text-muted"></i> OVO Sound <br/>
+                                    <i class="fa fa-envelope-o fa-fw text-muted"></i> ovosound.com
+                                </p>
+                            </div>
+                            <hr>
+                            <div class="text-center">
+                                <button href="#" class="btn btn-social btn-facebook btn-simple"><i class="fa fa-facebook-square"></i></button>
+                                <button href="#" class="btn btn-social btn-twitter btn-simple"><i class="fa fa-twitter"></i></button>
+                            </div>
+                        </div> <!-- end card -->
+                    </div> {% endcomment %}
+                    {% comment %} <div class="col-md-4">
+                        <div class="card card-user card-plain">
+                            <!-- <div class="image"></div> -->
+                            <div class="content"> {% endcomment %}
+                                {% comment %} <div class="author">
+                                    <a href="#">
+                                        <img class="avatar border-gray" src="{% static 'front/img/default-avatar.png' %}" alt="..."/>
+                                        <h4 class="title">Rick Ross <br />
+                                            <small>Musician</small>
+                                        </h4>
+                                    </a>
+                                </div> {% endcomment %}
+                                {% comment %} <p class="description text-center">
+                                    <i class="fa fa-map-marker fa-fw text-muted"></i> Miami, Florida,  <br/>
+                                    <i class="fa fa-building-o fa-fw text-muted"></i> Maybach Music Group <br/>
+                                    <i class="fa fa-envelope-o fa-fw text-muted"></i> godforgivesidont.com
+                                </p>
+                            </div>
+                            <hr>
+                            <div class="text-center">
+                                <button href="#" class="btn btn-social btn-twitter btn-simple"><i class="fa fa-twitter"></i></button>
+                                <button href="#" class="btn btn-social btn-github btn-simple"><i class="fa fa-github"></i></button>
+                            </div> {% endcomment %}
+                        {% comment %} </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end section meet our team --> {% endcomment %}
+
+    {% comment %} <div class="section section-gray">
+        <div class="container">
+            <h2 class="section-title">Meet our Team <small> (example 2)</small></h2>
+            <div class="team-presentation">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card card-user">
+                            <div class="image">
+                                <img src="{% static 'front/img/thumb.jpg' %}">
+                            </div>
+                            <div class="content">
+                                <div class="author">
+                                    <a href="#">
+                                    <img class="avatar" src="{% static 'front/img/default-avatar.png' %}" alt="..."/>
+                                    <h4 class="title">Jay Z <br />
+                                        <small>Producer</small>
+                                    </h4>
+                                    </a>
+                                </div>
+                                <p class="description text-center">
+                                    <i class="fa fa-map-marker fa-fw text-muted"></i> Brooklyn, New York <br/>
+                                    <i class="fa fa-building-o fa-fw text-muted"></i> Roc-A-Fella Records <br/>
+                                    <i class="fa fa-envelope-o fa-fw text-muted"></i> RocAFella.com
+                                </p>
+                            </div>
+                            <hr>
+                            <div class="text-center">
+                                <button href="#" class="btn btn-social btn-facebook btn-simple"><i class="fa fa-facebook-square"></i></button>
+                                <button href="#" class="btn btn-social btn-twitter btn-simple"><i class="fa fa-twitter"></i></button>
+                                <button href="#" class="btn btn-social btn-google btn-simple"><i class="fa fa-google-plus-square"></i></button>
+
+                            </div>
+                        </div> <!-- end card-->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-user">
+                            <div class="image">
+                                <img src="{% static 'front/img/thumb.jpg' %}">
+                            </div>
+                            <div class="content">
+                                <div class="author">
+                                    <a href="#">
+                                        <img class="avatar" src="{% static 'front/img/default-avatar.png' %}" alt="..."/>
+                                        <h4 class="title">Drake <br />
+                                            <small>Artist</small>
+                                        </h4>
+                                    </a>
+                                </div>
+                                <p class="description text-center">
+                                    <i class="fa fa-map-marker fa-fw text-muted"></i> Toronto, Ontario <br/>
+                                    <i class="fa fa-building-o fa-fw text-muted"></i> OVO Sound <br/>
+                                    <i class="fa fa-envelope-o fa-fw text-muted"></i> ovosound.com
+                                </p>
+                            </div>
+                            <hr>
+                            <div class="text-center">
+                                <button href="#" class="btn btn-social btn-facebook btn-simple"><i class="fa fa-facebook-square"></i></button>
+                                <button href="#" class="btn btn-social btn-twitter btn-simple"><i class="fa fa-twitter"></i></button>
+                            </div>
+                        </div> <!-- end card -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-user">
+                            <div class="image">
+                                <img src="{% static 'front/img/thumb.jpg' %}">
+                            </div>
+                            <div class="content">
+                                <div class="author">
+                                    <a href="#">
+                                        <img class="avatar" src="{% static 'front/img/default-avatar.png' %}" alt="..."/>
+                                        <h4 class="title">Rick Ross <br />
+                                            <small>Musician</small>
+                                        </h4>
+                                    </a>
+                                </div>
+                                <p class="description text-center">
+                                    <i class="fa fa-map-marker fa-fw text-muted"></i> Miami, Florida,  <br/>
+                                    <i class="fa fa-building-o fa-fw text-muted"></i> Maybach Music Group <br/>
+                                    <i class="fa fa-envelope-o fa-fw text-muted"></i> godforgivesidont.com
+                                </p>
+                            </div>
+                            <hr>
+                            <div class="text-center">
+                                <button href="#" class="btn btn-social btn-twitter btn-simple"><i class="fa fa-twitter"></i></button>
+                                <button href="#" class="btn btn-social btn-github btn-simple"><i class="fa fa-github"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> {% endcomment %}
+    </div> <!-- end section meet our team -->
+
+
+    <div class="section">
+        <div class="container">
+            <h2 class="section-title">Interest</h2>
+            <div class="clients-presentation">
+                <div class="row">
+                    <div class="col-4">
+                       <div class="info">
+                            {% comment %} <div class="icon">
+                                <i class="bi bi-activity"></i> {% endcomment %}
+                            </div>
+                            <div class="description">
+                                <h3> 1. Basketball </h3>
+                                <p class="text-muted">i love basketball more than anything :p </p>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="col-4">
+                       <div class="info">
+                            {% comment %} <div class="icon">
+                                <i class="pe-7s-scissors"></i> {% endcomment %}
+                            </div>
+                            <div class="description">
+                                <h3> 2. Dancing </h3>
+                                <p class="text-muted">i do breakdance, do dance and break my leg haha. </p>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="col-4">
+                       <div class="info">
+                            {% comment %} <div class="icon">
+                                <i class="pe-7s-tools"></i> {% endcomment %}
+                            </div>
+                            <div class="description">
+                                <h3> 3. Music </h3>
+                                <p class="text-muted">please understand just because i like sad music doesnt mean im sad lmao.</p>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="col-4">
+                        <div class="info">
+                            {% comment %} <div class="icon">
+                                <i class="pe-7s-paint"></i> {% endcomment %}
+                            </div>
+                            <div class="description">
+                                <h3> 4. Coffee </h3>
+                                <p class="text-muted">ion know how people function without coffee. </p>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+            <div class="social-line">
+                <div class="container">
+                   <div class="row">
+                    <div class="col-6">
+                            <a href="https://www.instagram.com/ihatekiwan/" class="btn btn-round btn-fill btn-social btn-instagram btn-lg">
+                                <i class="bi bi-instagram"></i> Instagram
+                            </a>
+                        </div>
+                         {% comment %} <div class="col-md-3">
+                            <a href="" class="btn btn-round btn-fill btn-social btn-twitter">
+                                <i class="fa fa-twitter"></i> Twitter
+                            </a>
+                        </div>
+                         <div class="col-md-3">
+                            <a href="" class="btn btn-round btn-fill btn-social btn-google">
+                                <i class="fa fa-google-plus-square"></i> Google+
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="" class="btn btn-round btn-fill btn-social btn-pinterest">
+                                <i class="fa fa-pinterest"></i> Pinterest {% endcomment %}
+                            </a>
+                        </div>
+                   </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div> <!-- end section meet our clients -->
+{% endblock content %}
